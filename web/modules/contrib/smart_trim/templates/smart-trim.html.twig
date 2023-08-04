@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a Smart Trimmed field.
+ *
+ * Available variables:
+ * - output: The trimmed text to output.
+ * - wrap_output: If true, output will be wrapped in a <div>.
+ *     Note: wrap_output is deprecated and will be removed in a future release.
+ *     Please override this template in your theme and apply any wrapping if
+ *     required.
+ * - wrapper_class: Class name for wrapper.
+ * - more: Render array for "More" link.
+ * - more_wrapper_class: Class name for more link wrapper.
+ * - field: The name of he field being rendered.
+ * - entity_type: The type of entity being rendered.
+ */
+#}
+{% if wrap_output == true %}
+  <div class="{{ wrapper_class }}">{{ output }}</div>
+{% else %}
+  {{ output }}
+{% endif %}
+
+{% if more != null %}
+  <div class="{{ more_wrapper_class }}">{{ render_var(more) }}</div>
+{% endif %}

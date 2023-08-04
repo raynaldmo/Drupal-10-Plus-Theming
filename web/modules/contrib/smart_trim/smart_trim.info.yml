@@ -1,0 +1,17 @@
+name: 'Smart Trim'
+type: module
+description: 'Provides a more robust alternative to "summary or trimmed" textfield format'
+package: Fields
+dependencies:
+  - drupal:field
+  - drupal:filter
+  - drupal:text
+  - token:token
+core_version_requirement: ^8 || ^9 || ^10
+test_dependencies:
+  - token_filter:token_filter
+
+# Information added by Drupal.org packaging script on 2023-06-07
+version: '2.1.0'
+project: 'smart_trim'
+datestamp: 1686152419

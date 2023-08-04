@@ -1,0 +1,12 @@
+{#
+/**
+ * @file
+ * Display a Smart Trimmed field with wrapper.
+ * Minimal output - we don't care about more link.
+ */
+#}
+<div class="test-theme-wrapper">{{ output }}</div>
+
+{% if more != null %}
+  <div class="test-theme-more-wrapper">{{ render_var(more) }}</div>
+{% endif %}

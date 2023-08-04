@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * @file
+ * Install, update and uninstall functions for smart_date module.
+ */
+
+declare(strict_types = 1);
+
+/**
+ * Update Smart Trim more settings.
+ *
+ * Iterate through entity view displays and for any with Smart Trim as formatter
+ * type, move top level more link settings into more array.
+ */
+function smart_trim_update_10201() {
+  /** @var \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager */
+  $entityTypeManager = \Drupal::service('entity_type.manager');
+  $storage = $entityTypeManager->getStorage('entity_view_display');
+  foreach ($storage->loadMultiple() as $display) {
+    $changed = FALSE;
+    /** @var \Drupal\Core\Entity\Entity\EntityViewDisplay $display */
+    $content = $display->get('content');
+    foreach ($content as $key => $content_entry) {
+      if (($content_entry['type'] ?? '') == 'smart_trim'
+        && isset($content_entry['settings']['more_link'])) {
+
+        $content[$key]['settings']['more'] = [
+          'display_link' => $content_entry['settings']['more_link'],
+          'target_blank' => $content_entry['settings']['more_target_blank'] ?? FALSE,
+          'link_trim_only' => $content_entry['settings']['more_link_trim_only'] ?? FALSE,
+          'class' => $content_entry['settings']['more_class'] ?? 'more-link',
+          'text' => $content_entry['settings']['more_text'] ?? t('More'),
+          'aria_label' => $content_entry['settings']['more_aria_label'] ?? t('Read more about [node:title]'),
+        ];
+        unset($content[$key]['settings']['more_link']);
+        unset($content[$key]['settings']['more_target_blank']);
+        unset($content[$key]['settings']['more_link_trim_only']);
+        unset($content[$key]['settings']['more_class']);
+        unset($content[$key]['settings']['more_text']);
+        unset($content[$key]['settings']['more_aria_label']);
+        $changed = TRUE;
+      }
+    }
+    if ($changed) {
+      $display->set('content', $content);
+      $display->save();
+    }
+  }
+}

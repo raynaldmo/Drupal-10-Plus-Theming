@@ -1,0 +1,10 @@
+name: Coffee
+description: Provides an Alfred like search box to navigate within your site.
+core_version_requirement: ^9.2 || ^10
+type: module
+configure: coffee.configuration
+
+# Information added by Drupal.org packaging script on 2022-12-19
+version: '8.x-1.3'
+project: 'coffee'
+datestamp: 1671440400

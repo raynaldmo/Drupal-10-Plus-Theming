@@ -1,0 +1,13 @@
+{#
+/**
+ * @file
+ * Display a Smart Trimmed field without wrapper (adds some trailing text for verification).
+ * Minimal output - we don't care about more link.
+ */
+#}
+{{ output }}
+<p>Below unwrapped</p>
+
+{% if more != null %}
+  {{ render_var(more) }}
+{% endif %}
