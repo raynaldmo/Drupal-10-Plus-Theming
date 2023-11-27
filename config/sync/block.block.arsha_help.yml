@@ -1,0 +1,22 @@
+uuid: eafc89ea-9269-4c3d-9388-8d207f18d1a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - arsha
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: arsha_help
+theme: arsha
+region: sidebar_first
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

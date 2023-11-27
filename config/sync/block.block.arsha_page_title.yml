@@ -1,0 +1,20 @@
+uuid: 15743459-0bca-43bd-9233-dff72a36d4a9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - arsha
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: arsha_page_title
+theme: arsha
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

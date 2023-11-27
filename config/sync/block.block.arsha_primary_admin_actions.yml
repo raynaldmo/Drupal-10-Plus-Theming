@@ -1,0 +1,20 @@
+uuid: e434cce8-d772-4a76-b68d-4f61533022ed
+langcode: en
+status: true
+dependencies:
+  theme:
+    - arsha
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: arsha_primary_admin_actions
+theme: arsha
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

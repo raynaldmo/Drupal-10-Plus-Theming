@@ -56,4 +56,5 @@ module:
 theme:
   olivero: 0
   claro: 0
+  arsha: 0
 profile: standard

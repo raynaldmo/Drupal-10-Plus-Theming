@@ -1,0 +1,22 @@
+uuid: 040e1606-97f7-4ed5-9327-957896190078
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - arsha
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: arsha_content
+theme: arsha
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
