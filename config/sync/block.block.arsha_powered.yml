@@ -1,6 +1,6 @@
 uuid: 932bc83e-7e59-4994-92c7-46c7c6b183c2
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
 id: arsha_powered
 theme: arsha
-region: sidebar_first
+region: header
 weight: 0
 provider: null
 plugin: system_powered_by_block

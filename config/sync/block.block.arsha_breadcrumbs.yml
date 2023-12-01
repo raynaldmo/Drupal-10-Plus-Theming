@@ -1,6 +1,6 @@
 uuid: 5efc51fd-1d0a-4da9-9d4e-2661c7821760
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,7 +10,7 @@ _core:
   default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
 id: arsha_breadcrumbs
 theme: arsha
-region: breadcrumb
+region: header
 weight: 0
 provider: null
 plugin: system_breadcrumb_block

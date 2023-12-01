@@ -1,6 +1,6 @@
 uuid: eafc89ea-9269-4c3d-9388-8d207f18d1a5
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -10,7 +10,7 @@ _core:
   default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
 id: arsha_help
 theme: arsha
-region: sidebar_first
+region: header
 weight: 0
 provider: null
 plugin: help_block

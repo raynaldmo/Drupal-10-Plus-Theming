@@ -7,3 +7,10 @@ alt text: 'Screenshot of Arsha, Drupal front-end theme.'
 version: '1.0'
 libraries:
   - arsha/global-styling
+
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  highlighted: 'Highlighted'
+  content: 'Content'
+  footer: 'Footer'
