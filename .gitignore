@@ -51,3 +51,6 @@
 
 # Ignore MacOS artifacts
 .DS_Store
+
+# Private and local development files
+/Development
