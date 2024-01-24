@@ -3,12 +3,16 @@ langcode: en
 status: true
 dependencies:
   config:
+    - filter.format.basic_html
+    - filter.format.header_html
     - node.type.article
     - node.type.page
+    - node.type.site_page
     - taxonomy.vocabulary.tags
   module:
     - comment
     - file
+    - filter
     - node
     - path
     - system
@@ -30,18 +34,28 @@ permissions:
   - 'administer url aliases'
   - 'create article content'
   - 'create page content'
+  - 'create site_page content'
   - 'create terms in tags'
   - 'create url aliases'
+  - 'delete any site_page content'
   - 'delete article revisions'
   - 'delete own article content'
   - 'delete own files'
   - 'delete own page content'
+  - 'delete own site_page content'
   - 'delete page revisions'
+  - 'delete site_page revisions'
+  - 'edit any site_page content'
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own page content'
+  - 'edit own site_page content'
   - 'edit terms in tags'
   - 'revert all revisions'
+  - 'revert site_page revisions'
+  - 'use text format basic_html'
+  - 'use text format header_html'
   - 'view all revisions'
   - 'view own unpublished content'
+  - 'view site_page revisions'
   - 'view the administration theme'

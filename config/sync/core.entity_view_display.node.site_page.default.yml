@@ -1,0 +1,28 @@
+uuid: 03516034-bbc9-483c-918d-d88041bf6513
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.site_page.body
+    - node.type.site_page
+  module:
+    - text
+    - user
+id: node.site_page.default
+targetEntityType: node
+bundle: site_page
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
