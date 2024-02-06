@@ -1,0 +1,23 @@
+uuid: dbb9af1e-a463-4f48-a9a9-bf9367370d4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero
+    - field.storage.block_content.field_video_link
+  module:
+    - link
+id: block_content.hero.field_video_link
+field_name: field_video_link
+entity_type: block_content
+bundle: hero
+label: 'Video link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

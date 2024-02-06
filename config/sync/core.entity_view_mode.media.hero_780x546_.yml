@@ -1,0 +1,10 @@
+uuid: 0ffbe3ff-e316-4fde-a488-3811f31b5d4f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.hero_780x546_
+label: 'Hero (780x546)'
+targetEntityType: media
+cache: true

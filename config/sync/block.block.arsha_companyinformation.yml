@@ -1,0 +1,25 @@
+uuid: 1fab2a0f-a25b-42a1-a3f6-129fc099f70c
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:company_information:128737cb-b05d-4f05-a8bb-4f64516ccc31'
+  module:
+    - block_content
+  theme:
+    - arsha
+id: arsha_companyinformation
+theme: arsha
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:128737cb-b05d-4f05-a8bb-4f64516ccc31'
+settings:
+  id: 'block_content:128737cb-b05d-4f05-a8bb-4f64516ccc31'
+  label: 'Company information'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

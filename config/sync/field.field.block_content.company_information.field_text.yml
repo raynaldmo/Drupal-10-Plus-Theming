@@ -1,0 +1,24 @@
+uuid: 7004dd6d-f899-4211-8877-6a15a492e646
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.company_information
+    - field.storage.block_content.field_text
+    - filter.format.basic_html
+  module:
+    - text
+id: block_content.company_information.field_text
+field_name: field_text
+entity_type: block_content
+bundle: company_information
+label: Text
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

@@ -1,0 +1,24 @@
+uuid: 3c206e1e-e31c-469a-a627-c084e5aa64e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.company_information
+    - field.storage.block_content.field_header
+    - filter.format.header_html
+  module:
+    - text
+id: block_content.company_information.field_header
+field_name: field_header
+entity_type: block_content
+bundle: company_information
+label: Header
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - header_html
+field_type: text_long

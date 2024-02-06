@@ -1,0 +1,9 @@
+social_media_links.theme:
+  css:
+    theme:
+      css/social_media_links.theme.css: {}
+
+fontawesome.component:
+  css:
+    component:
+      //cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css : { type: external }

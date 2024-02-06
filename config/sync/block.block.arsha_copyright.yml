@@ -1,0 +1,25 @@
+uuid: 71cb66b4-1253-472d-a300-50a3b9ba103d
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:copyright:caea1ab0-4628-4f21-afe4-89124aa86cc9'
+  module:
+    - block_content
+  theme:
+    - arsha
+id: arsha_copyright
+theme: arsha
+region: footer_bottom
+weight: 0
+provider: null
+plugin: 'block_content:caea1ab0-4628-4f21-afe4-89124aa86cc9'
+settings:
+  id: 'block_content:caea1ab0-4628-4f21-afe4-89124aa86cc9'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

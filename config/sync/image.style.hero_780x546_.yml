@@ -1,0 +1,15 @@
+uuid: 16c0926c-69db-4bb8-a63c-c5cbe0b6d3cf
+langcode: en
+status: true
+dependencies: {  }
+name: hero_780x546_
+label: 'Hero (780x546)'
+effects:
+  2cf8f821-b0bd-4666-9a85-d2484c5d6733:
+    uuid: 2cf8f821-b0bd-4666-9a85-d2484c5d6733
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 780
+      height: 546
+      anchor: center-center

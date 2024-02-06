@@ -1,0 +1,72 @@
+<?php
+
+/**
+ * @file
+ * Allows to add a block with the links to various social media platforms.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function social_media_links_theme($existing, $type, $theme, $path) {
+  return [
+    'social_media_links_platforms' => [
+      'variables' => [
+        'platforms' => [],
+        'appearance' => [],
+      ],
+    ],
+  ];
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK() for "social_media_links_platforms".
+ */
+function social_media_links_theme_suggestions_social_media_links_platforms(array $variables) {
+  $suggestions = [];
+
+  // If there is a custom suggestion add it to our base suggestion.
+  if (!empty($variables['appearance']['suggestion'])) {
+    $suggestions[] = 'social_media_links_platforms__' . $variables['appearance']['suggestion'];
+  }
+
+  return $suggestions;
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for block.html.twig.
+ */
+function social_media_links_preprocess_block(&$variables) {
+  if ($variables['plugin_id'] === 'social_media_links_block') {
+    // Ensure that the css class "block-social-media-links" always exist,
+    // no mather was theme is used. Because our styles use this class.
+    $variables['attributes']['class'][] = 'block-social-media-links';
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function social_media_links_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.social_media_links':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The modules provides a configurable block that display links (icons) to your profiles on various popular networking sites.') . '</p>';
+      $output .= '<h3>' . t('Installation') . '</h3>';
+      $output .= '<p><label>1.&nbsp;</label>' . t('Install as usual, see <a href=":documentation">installing contributed modules</a> for further information.', [':documentation' => 'https://www.drupal.org/docs/8/extending-drupal-8/installing-contributed-modules-find-import-enable-configure']) . '</p>';
+      $output .= '<p><label>2.&nbsp;</label>' . t('The module has no special configuration. All settings are available in the block settings: /admin/structure/block.') . '</p>';
+      $output .= '<h3>' . t('Included icon sets') . '</h3>';
+      $output .= '<p>' . t('The module contains a icon set, that the module is ready for use immediately after the installation.') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Attaching css file.
+ */
+function social_media_links_page_attachments(array &$attachments) {
+  $attachments['#attached']['library'][] = 'social_media_links/social_media_links.theme';
+}

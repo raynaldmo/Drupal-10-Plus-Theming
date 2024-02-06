@@ -1,0 +1,8 @@
+uuid: 115eb564-a608-42e1-8629-550ee9a25c5e
+langcode: en
+status: true
+dependencies: {  }
+id: our_social_networks
+label: 'Our Social Networks'
+revision: 1
+description: 'Our Social Networks'

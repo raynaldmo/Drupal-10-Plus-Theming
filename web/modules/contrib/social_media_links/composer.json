@@ -1,0 +1,26 @@
+{
+    "name": "drupal/social_media_links",
+    "description": "The module provides a block that display links (icons) to your profiles on various social networking sites.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.drupal.org/project/social_media_links",
+    "authors": [
+        {
+            "name": "Neslee Canil Pinto",
+            "homepage": "https://www.drupal.org/u/neslee-canil-pinto",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Christian Beier",
+            "homepage": "https://www.drupal.org/u/cbeier",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/social_media_links",
+        "source": "https://git.drupalcode.org/project/social_media_links"
+    },
+    "require": {
+        "drupal/core": "^8 || ^9 || ^10"
+    }
+}

@@ -1,0 +1,31 @@
+{#
+/**
+ * @ingroup themeable
+ */
+#}
+
+{%
+  set classes = [
+    'social-media-links--platforms',
+    'platforms',
+    appearance.orientation == 'h' ? 'inline horizontal' : 'vertical',
+  ]
+%}
+
+<ul{{ attributes.addClass(classes) }}>
+  {% for platform in platforms %}
+    <li>
+      <a class="social-media-link-icon--{{ platform.id }}" href="{{ platform.url }}" {{ platform.attributes }} >
+        {{ platform.element }}
+      </a>
+
+      {% if appearance.show_name %}
+        {% if appearance.orientation == 'h' %}
+          <br />
+        {% endif %}
+
+        <span><a class="social-media-link--{{ platform.id }}" href="{{ platform.url }}" {{ platform.attributes }}>{{ platform.name }}</a></span>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,8 @@
+uuid: e09e699c-2066-4b47-a517-25cdb98128b0
+langcode: en
+status: true
+dependencies: {  }
+id: newsletter
+label: Newsletter
+revision: 1
+description: 'Newsletter block'

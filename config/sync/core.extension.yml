@@ -29,6 +29,8 @@ module:
   history: 0
   image: 0
   link: 0
+  media: 0
+  media_library: 0
   menu_link_content: 0
   menu_ui: 0
   mysql: 0
@@ -40,6 +42,8 @@ module:
   search: 0
   shortcut: 0
   smart_trim: 0
+  social_media_links: 0
+  social_media_links_field: 0
   system: 0
   taxonomy: 0
   text: 0
@@ -49,6 +53,8 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  webform: 0
+  webform_ui: 0
   pathauto: 1
   views: 10
   standard: 1000

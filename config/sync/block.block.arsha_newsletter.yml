@@ -1,0 +1,30 @@
+uuid: 3ee25495-dfaa-406c-bd32-3d9508e3fdf7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:newsletter:4c87ed35-5446-4df1-aa8a-0c1feba88db2'
+  module:
+    - block_content
+    - system
+  theme:
+    - arsha
+id: arsha_newsletter
+theme: arsha
+region: footer_top
+weight: 0
+provider: null
+plugin: 'block_content:4c87ed35-5446-4df1-aa8a-0c1feba88db2'
+settings:
+  id: 'block_content:4c87ed35-5446-4df1-aa8a-0c1feba88db2'
+  label: Newsletter
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,24 @@
+uuid: 098beb9a-304f-40e1-9271-d672a8ce662b
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+    - field.storage.block_content.field_header
+    - filter.format.header_html
+  module:
+    - text
+id: block_content.newsletter.field_header
+field_name: field_header
+entity_type: block_content
+bundle: newsletter
+label: Header
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - header_html
+field_type: text_long

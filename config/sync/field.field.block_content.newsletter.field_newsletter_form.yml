@@ -1,0 +1,32 @@
+uuid: 5c1ce1d7-4865-46f2-bef2-3c065fdcc0ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+    - field.storage.block_content.field_newsletter_form
+    - webform.webform.newsletter
+  module:
+    - webform
+id: block_content.newsletter.field_newsletter_form
+field_name: field_newsletter_form
+entity_type: block_content
+bundle: newsletter
+label: 'Newsletter form'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    target_uuid: 58e3f415-9d06-428f-afab-c159226159b0
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

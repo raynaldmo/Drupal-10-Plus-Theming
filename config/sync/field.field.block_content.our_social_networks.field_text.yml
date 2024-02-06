@@ -1,0 +1,24 @@
+uuid: dcce55d8-6b79-4bf0-9256-3950dee72f8a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.our_social_networks
+    - field.storage.block_content.field_text
+    - filter.format.basic_html
+  module:
+    - text
+id: block_content.our_social_networks.field_text
+field_name: field_text
+entity_type: block_content
+bundle: our_social_networks
+label: Text
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

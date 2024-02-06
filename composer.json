@@ -25,6 +25,8 @@
         "drupal/core-recommended": "^10.1",
         "drupal/pathauto": "^1.11",
         "drupal/smart_trim": "^2.1",
+        "drupal/social_media_links": "^2.9",
+        "drupal/webform": "^6.2",
         "drush/drush": "^12.0"
     },
     "conflict": {

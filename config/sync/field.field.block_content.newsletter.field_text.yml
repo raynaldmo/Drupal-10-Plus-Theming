@@ -1,0 +1,24 @@
+uuid: d290ed40-0cbb-4cff-83ee-4a8eaae8ee4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+    - field.storage.block_content.field_text
+    - filter.format.basic_html
+  module:
+    - text
+id: block_content.newsletter.field_text
+field_name: field_text
+entity_type: block_content
+bundle: newsletter
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

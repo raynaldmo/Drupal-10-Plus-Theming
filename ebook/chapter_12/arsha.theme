@@ -1,0 +1,12 @@
+<?php
+/**
+ * Implements hook_preprocess_image().
+ */
+function arsha_preprocess_image(&$variables) {
+  // All images will have the 'img-fluid' class
+  $variables['attributes']['class'][] = 'img-fluid';
+  // Hero image is "animated"
+  if ($variables['style_name'] == "hero_780x546_") {
+    $variables['attributes']['class'][] = 'animated';
+  }
+}

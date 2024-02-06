@@ -1,0 +1,40 @@
+uuid: dcfb8d09-6ce2-470f-9722-b56a4883c0e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.company_information
+    - field.field.block_content.company_information.field_header
+    - field.field.block_content.company_information.field_text
+  module:
+    - text
+id: block_content.company_information.default
+targetEntityType: block_content
+bundle: company_information
+mode: default
+content:
+  field_header:
+    type: text_textarea
+    weight: 26
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 27
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

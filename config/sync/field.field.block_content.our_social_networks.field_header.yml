@@ -1,0 +1,24 @@
+uuid: 816b9367-b33f-41a9-a01d-041e50c9a1ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.our_social_networks
+    - field.storage.block_content.field_header
+    - filter.format.header_html
+  module:
+    - text
+id: block_content.our_social_networks.field_header
+field_name: field_header
+entity_type: block_content
+bundle: our_social_networks
+label: Header
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - header_html
+field_type: text_long

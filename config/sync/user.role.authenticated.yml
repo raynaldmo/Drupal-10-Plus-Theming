@@ -2,10 +2,14 @@ uuid: 3936999e-4a01-41db-b51f-140bffe85b25
 langcode: en
 status: true
 dependencies:
+  config:
+    - filter.format.webform_default
   module:
     - comment
     - contact
     - file
+    - filter
+    - media
     - search
     - shortcut
     - system
@@ -24,3 +28,5 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'use text format webform_default'
+  - 'view media'

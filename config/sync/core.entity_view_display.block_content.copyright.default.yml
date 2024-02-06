@@ -1,0 +1,30 @@
+uuid: f97600d4-4a9f-4494-9f64-bdc909deca4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.copyright
+    - field.field.block_content.copyright.field_copyright
+    - field.field.block_content.copyright.field_site_credits
+  module:
+    - text
+id: block_content.copyright.default
+targetEntityType: block_content
+bundle: copyright
+mode: default
+content:
+  field_copyright:
+    type: text_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_site_credits:
+    type: text_default
+    label: visually_hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

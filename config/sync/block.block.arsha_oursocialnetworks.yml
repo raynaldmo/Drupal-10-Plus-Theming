@@ -1,0 +1,25 @@
+uuid: 55552b34-b428-4d9a-9737-36ed6fd39399
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:our_social_networks:741a19ec-08b4-40e7-a2af-c33fcc092f4b'
+  module:
+    - block_content
+  theme:
+    - arsha
+id: arsha_oursocialnetworks
+theme: arsha
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:741a19ec-08b4-40e7-a2af-c33fcc092f4b'
+settings:
+  id: 'block_content:741a19ec-08b4-40e7-a2af-c33fcc092f4b'
+  label: 'Our Social Networks'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 8d316dc8-e5f9-4cd1-9151-a70eb092bb41
+langcode: en
+status: true
+dependencies: {  }
+id: copyright
+label: Copyright
+revision: 0
+description: 'Copyright block'

@@ -1,0 +1,8 @@
+uuid: 66a698c6-b01a-4515-90bf-9307f7987ce3
+langcode: en
+status: true
+dependencies: {  }
+id: hero
+label: Hero
+revision: 1
+description: 'Front page hero'

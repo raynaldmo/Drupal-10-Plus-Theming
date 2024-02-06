@@ -1,0 +1,24 @@
+uuid: 8737bed7-c9e0-49ff-9cdb-1666f06492b1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.copyright
+    - field.storage.block_content.field_copyright
+    - filter.format.basic_html
+  module:
+    - text
+id: block_content.copyright.field_copyright
+field_name: field_copyright
+entity_type: block_content
+bundle: copyright
+label: Copyright
+description: 'Copyright text'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

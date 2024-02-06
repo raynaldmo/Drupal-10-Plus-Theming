@@ -1,0 +1,24 @@
+uuid: ba42fdb7-11e2-4f0a-94e4-c7a1a613d795
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.copyright
+    - field.storage.block_content.field_site_credits
+    - filter.format.basic_html
+  module:
+    - text
+id: block_content.copyright.field_site_credits
+field_name: field_site_credits
+entity_type: block_content
+bundle: copyright
+label: 'Site credits'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

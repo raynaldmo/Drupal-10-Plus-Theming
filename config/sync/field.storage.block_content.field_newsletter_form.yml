@@ -1,0 +1,20 @@
+uuid: 9693dee9-0759-454f-b5b8-4ff2033a7a9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - webform
+id: block_content.field_newsletter_form
+field_name: field_newsletter_form
+entity_type: block_content
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,30 @@
+uuid: 6ade0123-f65e-405e-95af-a956b8d90052
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:hero:6fb7e388-625a-4f4c-8b77-7d4e68099e7a'
+  module:
+    - block_content
+    - system
+  theme:
+    - arsha
+id: arsha_heroblock
+theme: arsha
+region: hero
+weight: 0
+provider: null
+plugin: 'block_content:6fb7e388-625a-4f4c-8b77-7d4e68099e7a'
+settings:
+  id: 'block_content:6fb7e388-625a-4f4c-8b77-7d4e68099e7a'
+  label: 'Hero Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,25 @@
+uuid: 926288c5-a606-4f46-8c3b-5bc871b8e002
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.useful-links
+  module:
+    - system
+  theme:
+    - arsha
+id: arsha_usefullinks
+theme: arsha
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:useful-links'
+settings:
+  id: 'system_menu_block:useful-links'
+  label: 'Useful Links'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

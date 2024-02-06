@@ -1,0 +1,51 @@
+uuid: 3501ce2c-bd24-4af5-98a9-1892bc2c26ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.newsletter
+    - field.field.block_content.newsletter.field_header
+    - field.field.block_content.newsletter.field_newsletter_form
+    - field.field.block_content.newsletter.field_text
+  module:
+    - text
+    - webform
+id: block_content.newsletter.default
+targetEntityType: block_content
+bundle: newsletter
+mode: default
+content:
+  field_header:
+    type: text_textarea
+    weight: 26
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_newsletter_form:
+    type: webform_entity_reference_select
+    weight: 28
+    region: content
+    settings:
+      default_data: true
+      webforms:
+        - newsletter
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 27
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }
