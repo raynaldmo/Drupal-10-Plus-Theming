@@ -1,0 +1,62 @@
+uuid: 264a52f2-9b50-4935-8a0e-df23fc8b1744
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_text.field_header
+    - field.field.paragraph.two_column_text.field_left_button
+    - field.field.paragraph.two_column_text.field_left_text
+    - field.field.paragraph.two_column_text.field_right_button
+    - field.field.paragraph.two_column_text.field_right_text
+    - paragraphs.paragraphs_type.two_column_text
+  module:
+    - link
+    - text
+id: paragraph.two_column_text.default
+targetEntityType: paragraph
+bundle: two_column_text
+mode: default
+content:
+  field_header:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_left_button:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_left_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_right_button:
+    type: link_default
+    weight: 4
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_right_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

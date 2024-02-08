@@ -1,0 +1,43 @@
+uuid: 70520a3d-bb90-4aa3-a9d7-353c6ff35501
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_accordion
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.accordion_item
+  module:
+    - entity_reference_revisions
+id: paragraph.accordion.field_accordion
+field_name: field_accordion
+entity_type: paragraph
+bundle: accordion
+label: Accordion
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion_item: accordion_item
+    negate: 0
+    target_bundles_drag_drop:
+      accordion_item:
+        weight: 6
+        enabled: true
+      clients_logo:
+        weight: 7
+        enabled: false
+      faqs:
+        weight: 8
+        enabled: false
+      two_column_text:
+        weight: 9
+        enabled: false
+      why_us:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

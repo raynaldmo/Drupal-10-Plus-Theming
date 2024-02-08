@@ -1,0 +1,61 @@
+uuid: 077b16db-a96f-46f6-ad8b-125df0838632
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion_and_media.field_accordion
+    - field.field.paragraph.accordion_and_media.field_header
+    - field.field.paragraph.accordion_and_media.field_image
+    - field.field.paragraph.accordion_and_media.field_text
+    - paragraphs.paragraphs_type.accordion_and_media
+  module:
+    - entity_reference_revisions
+    - fences
+    - text
+id: paragraph.accordion_and_media.default
+targetEntityType: paragraph
+bundle: accordion_and_media
+mode: default
+content:
+  field_accordion:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_header:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: large_4_3_1200x900
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 2
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

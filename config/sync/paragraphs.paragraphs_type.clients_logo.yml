@@ -1,0 +1,10 @@
+uuid: 179c4ac6-9801-4939-aed6-6bd06d7ef3c6
+langcode: en
+status: true
+dependencies: {  }
+id: clients_logo
+label: 'Clients logo'
+icon_uuid: null
+icon_default: null
+description: 'Clients logo section'
+behavior_plugins: {  }

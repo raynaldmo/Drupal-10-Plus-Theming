@@ -1,0 +1,10 @@
+uuid: 6defd5b8-32b1-4a02-900d-d6df22834364
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.large_4_3_1200x900
+label: 'Large 4:3 (1200x900)'
+targetEntityType: media
+cache: true

@@ -1,0 +1,10 @@
+uuid: 7c6122b0-be99-4f2f-b796-54ff2d1f21c3
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.client_logo_full_size
+label: 'Client logo (full size)'
+targetEntityType: media
+cache: true

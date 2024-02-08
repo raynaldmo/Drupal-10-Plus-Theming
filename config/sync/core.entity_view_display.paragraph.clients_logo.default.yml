@@ -1,0 +1,33 @@
+uuid: ab256d98-4a6d-4bbb-b996-265806943180
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.clients_logo.field_logo_image
+    - paragraphs.paragraphs_type.clients_logo
+  module:
+    - fences
+id: paragraph.clients_logo.default
+targetEntityType: paragraph
+bundle: clients_logo
+mode: default
+content:
+  field_logo_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: client_logo_full_size
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 0
+    region: content
+hidden: {  }

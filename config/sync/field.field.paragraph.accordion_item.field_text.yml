@@ -1,0 +1,24 @@
+uuid: d1f1c912-d0f9-408b-bc08-896f0bc6264a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.accordion_item
+  module:
+    - text
+id: paragraph.accordion_item.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: accordion_item
+label: 'Accordion item text'
+description: 'Enter the text you want to show when the accordion link is clicked.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

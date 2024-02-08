@@ -1,0 +1,23 @@
+uuid: 7040ef55-f8f7-43ec-88dc-77e120acc781
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_number
+    - paragraphs.paragraphs_type.accordion_item
+id: paragraph.accordion_item.field_number
+field_name: field_number
+entity_type: paragraph
+bundle: accordion_item
+label: 'Accordion item number'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: 10
+  prefix: ''
+  suffix: ''
+field_type: integer

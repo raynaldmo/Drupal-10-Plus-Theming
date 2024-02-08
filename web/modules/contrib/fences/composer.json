@@ -1,0 +1,23 @@
+{
+    "name": "drupal/fences",
+    "description": "Alter wrapping markup of fields.",
+    "type": "drupal-module",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "John Albin Wilkins (JohnAlbin)",
+            "homepage": "https://www.drupal.org/u/johnalbin",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Sam Becker (Sam152)",
+            "homepage": "https://www.drupal.org/u/sam152",
+            "role": "Co-maintainer"
+        }
+    ],
+    "homepage": "https://drupal.org/project/fences",
+    "support": {
+        "issues": "https://drupal.org/project/issues/fences",
+        "source": "https://git.drupalcode.org/project/fences"
+    }
+}

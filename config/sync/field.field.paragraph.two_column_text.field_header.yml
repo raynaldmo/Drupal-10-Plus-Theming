@@ -1,0 +1,24 @@
+uuid: 7750d5d8-4c57-4948-a41a-e439c3df2f86
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_header
+    - filter.format.header_html
+    - paragraphs.paragraphs_type.two_column_text
+  module:
+    - text
+id: paragraph.two_column_text.field_header
+field_name: field_header
+entity_type: paragraph
+bundle: two_column_text
+label: Header
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - header_html
+field_type: text_long

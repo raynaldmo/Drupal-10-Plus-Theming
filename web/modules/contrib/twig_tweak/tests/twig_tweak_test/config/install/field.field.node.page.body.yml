@@ -1,16 +1,15 @@
-uuid: be8f73e4-959d-4dce-9c7c-f7fcc5b21acd
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.body
-    - node.type.site_page
+    - node.type.page
   module:
     - text
-id: node.site_page.body
+id: node.page.body
 field_name: body
 entity_type: node
-bundle: site_page
+bundle: page
 label: Body
 description: ''
 required: false
@@ -20,5 +19,4 @@ default_value_callback: ''
 settings:
   display_summary: true
   required_summary: false
-  allowed_formats: {  }
 field_type: text_with_summary

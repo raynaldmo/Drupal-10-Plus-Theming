@@ -1,0 +1,24 @@
+uuid: 3476c51f-c84c-4236-8a13-059b7aaa438a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_right_text
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.two_column_text
+  module:
+    - text
+id: paragraph.two_column_text.field_right_text
+field_name: field_right_text
+entity_type: paragraph
+bundle: two_column_text
+label: 'Right text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

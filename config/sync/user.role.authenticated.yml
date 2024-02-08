@@ -10,6 +10,7 @@ dependencies:
     - file
     - filter
     - media
+    - paragraphs_type_permissions
     - search
     - shortcut
     - system
@@ -30,3 +31,8 @@ permissions:
   - 'skip comment approval'
   - 'use text format webform_default'
   - 'view media'
+  - 'view paragraph content accordion'
+  - 'view paragraph content accordion_and_media'
+  - 'view paragraph content accordion_item'
+  - 'view paragraph content clients_logo'
+  - 'view paragraph content two_column_text'

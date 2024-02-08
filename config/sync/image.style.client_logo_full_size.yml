@@ -1,0 +1,13 @@
+uuid: c2fc0afc-cd0c-4aec-97e7-73cab76b4998
+langcode: en
+status: true
+dependencies: {  }
+name: client_logo_full_size
+label: 'Client logo (full size)'
+effects:
+  e7fc8800-7abf-46d1-912c-7bf3c74c534a:
+    uuid: e7fc8800-7abf-46d1-912c-7bf3c74c534a
+    id: image_convert
+    weight: 1
+    data:
+      extension: webp

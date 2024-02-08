@@ -1,0 +1,85 @@
+uuid: 66fa35a2-286c-410d-ab30-7402089abb3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.accordion_and_media.field_accordion
+    - field.field.paragraph.accordion_and_media.field_header
+    - field.field.paragraph.accordion_and_media.field_image
+    - field.field.paragraph.accordion_and_media.field_text
+    - paragraphs.paragraphs_type.accordion_and_media
+  module:
+    - media_library
+    - paragraphs
+    - text
+id: paragraph.accordion_and_media.default
+targetEntityType: paragraph
+bundle: accordion_and_media
+mode: default
+content:
+  field_accordion:
+    type: paragraphs
+    weight: 4
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: accordion_item
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_accordion_item:
+    type: paragraphs
+    weight: 3
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: all
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: accordion_and_media_item
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        convert: '0'
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_header:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

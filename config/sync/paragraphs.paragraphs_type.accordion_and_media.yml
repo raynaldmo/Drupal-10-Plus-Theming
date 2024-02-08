@@ -1,0 +1,10 @@
+uuid: de5aead3-d75d-42d7-be47-9dc5e4f3b225
+langcode: en
+status: true
+dependencies: {  }
+id: accordion_and_media
+label: 'Accordion and Media'
+icon_uuid: null
+icon_default: null
+description: 'Accordion and Media'
+behavior_plugins: {  }

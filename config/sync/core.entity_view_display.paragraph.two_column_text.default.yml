@@ -1,0 +1,93 @@
+uuid: e24d400b-b19c-45d2-b1d4-5e8ac2468355
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.two_column_text.field_header
+    - field.field.paragraph.two_column_text.field_left_button
+    - field.field.paragraph.two_column_text.field_left_text
+    - field.field.paragraph.two_column_text.field_right_button
+    - field.field.paragraph.two_column_text.field_right_text
+    - paragraphs.paragraphs_type.two_column_text
+  module:
+    - fences
+    - link
+    - text
+id: paragraph.two_column_text.default
+targetEntityType: paragraph
+bundle: two_column_text
+mode: default
+content:
+  field_header:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_left_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_left_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 1
+    region: content
+  field_right_button:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 4
+    region: content
+  field_right_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 2
+    region: content
+hidden: {  }

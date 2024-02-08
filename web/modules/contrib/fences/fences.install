@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * @file
+ * Installation hooks for Fences module.
+ */
+
+use Drupal\fences\TagManagerInterface;
+
+/**
+ * Add status field.
+ */
+function fences_update_8001() {
+  return t('New Fences permission "Edit fences formatter settings" was added, adjust your permissions accordingly.');
+}
+
+/**
+ * Add new wrapper_tag configuration to all entity_view_displays using fences.
+ * Check custom field.html.twig theme overwrites for differences.
+ */
+function fences_update_8301(&$sandbox) {
+  // See https://www.drupal.org/docs/drupal-apis/update-api/updating-entities-and-fields-in-drupal-8#s-updating-entity-view-display-configs
+  if ($view_displays = \Drupal::entityTypeManager()->getStorage('entity_view_display')->loadMultiple(NULL)) {
+    // Loop through all entity view displays:
+    foreach ($view_displays as $view_display) {
+      $components = $view_display->getComponents();
+      foreach ($components as $componentName => $component) {
+        if (!empty($component['third_party_settings']['fences'])) {
+          // Explicitely set fences_field_items_wrapper_tag to 'none' if not existing yet.
+          if (!isset($component['third_party_settings']['fences']['fences_field_items_wrapper_tag'])) {
+            $component['third_party_settings']['fences']['fences_field_items_wrapper_tag'] = TagManagerInterface::NO_MARKUP_VALUE;
+          }
+          // Explicitely set fences_field_items_wrapper_classes to 'none' if not existing yet.
+          if (!isset($component['third_party_settings']['fences']['fences_field_items_wrapper_classes'])) {
+            $component['third_party_settings']['fences']['fences_field_items_wrapper_classes'] = TagManagerInterface::NO_MARKUP_VALUE;
+          }
+          // Save changes:
+          $view_display->setComponent($componentName, $component)->save();
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Fences field.html.twig changed. See 3.x release notes!
+ */
+function fences_update_8302() {
+  // See https://www.drupal.org/project/fences/issues/3303655
+  // and https://www.drupal.org/project/fences/issues/1343578
+  return t('IMPORTANT: Fences field.html.twig changed from fences 8.x-2.x -> 3.x! If you overwrite field.html.twig in your template, you may need to compare and adopt changes! If not, everything should be fine.');
+}

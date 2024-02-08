@@ -1,0 +1,23 @@
+uuid: 51c1b387-920c-4619-baf4-53e219c8c39a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_right_button
+    - paragraphs.paragraphs_type.two_column_text
+  module:
+    - link
+id: paragraph.two_column_text.field_right_button
+field_name: field_right_button
+entity_type: paragraph
+bundle: two_column_text
+label: 'Right button'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

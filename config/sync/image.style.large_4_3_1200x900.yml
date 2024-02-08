@@ -1,0 +1,15 @@
+uuid: 8260eb35-218f-4013-98ce-bc32f9b89d1b
+langcode: en
+status: true
+dependencies: {  }
+name: large_4_3_1200x900
+label: 'Large 4:3 (1200x900)'
+effects:
+  8d9606a8-d0dd-4dec-a40c-eb5f62ae47db:
+    uuid: 8d9606a8-d0dd-4dec-a40c-eb5f62ae47db
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1200
+      height: 900
+      anchor: center-center

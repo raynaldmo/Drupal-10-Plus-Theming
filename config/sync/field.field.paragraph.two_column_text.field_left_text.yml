@@ -1,0 +1,24 @@
+uuid: 0b7e32b8-a423-45e1-943c-1974970f2fff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_left_text
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.two_column_text
+  module:
+    - text
+id: paragraph.two_column_text.field_left_text
+field_name: field_left_text
+entity_type: paragraph
+bundle: two_column_text
+label: 'Left text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long
