@@ -1,0 +1,44 @@
+uuid: 937c383e-6e1a-483d-b54a-28d7ac491e08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.text_and_button.field_button
+    - field.field.paragraph.text_and_button.field_image
+    - field.field.paragraph.text_and_button.field_text
+    - paragraphs.paragraphs_type.text_and_button
+  module:
+    - link
+    - media_library
+    - text
+id: paragraph.text_and_button.default
+targetEntityType: paragraph
+bundle: text_and_button
+mode: default
+content:
+  field_button:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_image:
+    type: media_library_widget
+    weight: 2
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,33 @@
+uuid: 86a09f0f-2e48-4cd2-bb67-c1c4ca9065a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.service.body
+    - field.field.node.service.field_icon
+    - field.field.node.service.field_weight
+    - node.type.service
+  module:
+    - text
+    - user
+id: node.service.full
+targetEntityType: node
+bundle: service
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  field_icon: true
+  field_weight: true

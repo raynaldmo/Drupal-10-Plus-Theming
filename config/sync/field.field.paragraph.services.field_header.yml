@@ -1,0 +1,24 @@
+uuid: 84f215cb-8760-4613-86d0-bbc5a774b282
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_header
+    - filter.format.header_html
+    - paragraphs.paragraphs_type.services
+  module:
+    - text
+id: paragraph.services.field_header
+field_name: field_header
+entity_type: paragraph
+bundle: services
+label: Header
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - header_html
+field_type: text_long

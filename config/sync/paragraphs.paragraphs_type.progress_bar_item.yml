@@ -1,0 +1,10 @@
+uuid: 1de0a01c-4aab-4cfc-a72c-9d3700f6ccf5
+langcode: en
+status: true
+dependencies: {  }
+id: progress_bar_item
+label: 'Progress bar item'
+icon_uuid: null
+icon_default: null
+description: 'Progress bar item'
+behavior_plugins: {  }

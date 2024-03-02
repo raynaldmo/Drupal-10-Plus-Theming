@@ -1,0 +1,10 @@
+uuid: 165726a2-55b0-4dc8-8241-21603952aac7
+langcode: en
+status: true
+dependencies: {  }
+id: progress_bar_and_media
+label: 'Progress bar and media'
+icon_uuid: null
+icon_default: null
+description: 'Progress bar and media'
+behavior_plugins: {  }

@@ -1,0 +1,89 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a paragraph.
+ *
+ * Available variables:
+ * - paragraph: Full paragraph entity.
+ *   Only method names starting with "get", "has", or "is" and a few common
+ *   methods such as "id", "label", and "bundle" are available. For example:
+ *   - paragraph.getCreatedTime() will return the paragraph creation timestamp.
+ *   - paragraph.id(): The paragraph ID.
+ *   - paragraph.bundle(): The type of the paragraph, for example, "image" or "text".
+ *   - paragraph.getOwnerId(): The user ID of the paragraph author.
+ *   See Drupal\paragraphs\Entity\Paragraph for a full list of public properties
+ *   and methods for the paragraph object.
+ * - content: All paragraph items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {{ content|without('field_example') }} to temporarily suppress the printing
+ *   of a given child element.
+ * - attributes: HTML attributes for the containing element.
+ *   The attributes.class element may contain one or more of the following
+ *   classes:
+ *   - paragraphs: The current template type (also known as a "theming hook").
+ *   - paragraphs--type-[type]: The current paragraphs type. For example, if the paragraph is an
+ *     "Image" it would result in "paragraphs--type--image". Note that the machine
+ *     name will often be in a short form of the human readable label.
+ *   - paragraphs--view-mode--[view_mode]: The View Mode of the paragraph; for example, a
+ *     preview would result in: "paragraphs--view-mode--preview", and
+ *     default: "paragraphs--view-mode--default".
+ * - view_mode: View mode; for example, "preview" or "full".
+ * - logged_in: Flag for authenticated user status. Will be true when the
+ *   current user is a logged-in member.
+ * - is_admin: Flag for admin user status. Will be true when the current user
+ *   is an administrator.
+ *
+ * @see template_preprocess_paragraph()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished',
+    'skills',
+  ]
+%}
+
+{# Check Image position setting and set image/progress bar flex item order #}
+{% set image_position = content.field_position.0['#markup'] %}
+{% if image_position == 'Left' %}
+  {% set image_order = 'order-lg-0' %}
+  {% set bar_order = 'order-lg-1' %}
+{% else %}
+  {% set image_order = 'order-lg-1' %}
+  {% set bar_order = 'order-lg-0' %}
+{% endif %}
+
+{% block paragraph %}
+  <section{{ attributes.addClass(classes).setAttribute('id', 'skills') }}>
+    {% block content %}
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-6 d-flex align-items-center {{image_order}}" data-aos="fade-right" data-aos-delay="100">
+          {# Use Twig Tweak file_uri filter #}
+          {% set image_uri = 
+            paragraph.field_image|file_uri 
+          %}
+          {% if image_uri is not empty %}
+            {# Use Twig Tweak to render image #}
+            {{ drupal_image(image_uri, 'medium_4_3_1024x768') }}
+          {% endif %}
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 content {{bar_order}}" data-aos="fade-left" data-aos-delay="100">
+            {{ content.field_header }}
+            {% if content.field_text.0 is not empty %}
+              {{ content.field_text }}
+            {% endif %}
+            <div class="skills-content">                      
+              {{ content.field_progress_bar_item }}
+            </div>
+          </div>
+        </div>
+      </div>        
+    {% endblock %}
+  </section>
+{% endblock paragraph %}

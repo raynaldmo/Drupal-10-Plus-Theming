@@ -1,0 +1,23 @@
+uuid: 26585c76-a72e-45cc-8e8b-d1ca1557c506
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_position
+    - paragraphs.paragraphs_type.progress_bar_and_media
+  module:
+    - options
+id: paragraph.progress_bar_and_media.field_position
+field_name: field_position
+entity_type: paragraph
+bundle: progress_bar_and_media
+label: 'Image position'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

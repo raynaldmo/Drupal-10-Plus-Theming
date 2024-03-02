@@ -1,0 +1,21 @@
+/* Hide About text formats link  */
+/* Page (front page) content type node edit form */
+.page-content #node-site-page-edit-form .filter-wrapper {
+  display: none;
+}
+/* Article content type node edit form */
+.page-content #node-article-form .filter-wrapper {
+  display: none;
+}
+/* Basic page content type node edit form */
+.page-content #node-page-form .filter-wrapper {
+  display: none;
+}
+/* Service content edit form */
+.page-content #node-service-edit-form .filter-wrapper {
+  display: none;
+}
+/* Service content form */
+.page-content #node-service-form .filter-wrapper {
+  display: none;
+}

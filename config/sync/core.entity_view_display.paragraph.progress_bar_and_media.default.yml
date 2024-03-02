@@ -1,0 +1,79 @@
+uuid: 6a4f863d-968b-48de-adde-f2187e0e4bbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.progress_bar_and_media.field_header
+    - field.field.paragraph.progress_bar_and_media.field_image
+    - field.field.paragraph.progress_bar_and_media.field_position
+    - field.field.paragraph.progress_bar_and_media.field_progress_bar_item
+    - field.field.paragraph.progress_bar_and_media.field_text
+    - paragraphs.paragraphs_type.progress_bar_and_media
+  module:
+    - entity_reference_revisions
+    - fences
+    - options
+    - text
+id: paragraph.progress_bar_and_media.default
+targetEntityType: paragraph
+bundle: progress_bar_and_media
+mode: default
+content:
+  field_header:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: medium_4_3_1024x768
+      link: false
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 2
+    region: content
+  field_position:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_progress_bar_item:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: div
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 1
+    region: content
+hidden: {  }

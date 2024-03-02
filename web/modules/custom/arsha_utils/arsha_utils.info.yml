@@ -1,0 +1,5 @@
+name: 'Arsha Utils'
+type: module
+description: 'Arsha site utilities.'
+package: 'Custom'
+core_version_requirement: ^10

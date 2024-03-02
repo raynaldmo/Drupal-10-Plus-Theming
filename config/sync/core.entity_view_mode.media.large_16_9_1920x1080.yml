@@ -1,0 +1,10 @@
+uuid: 2aaac96c-1082-4eaa-ad04-23ffbbeb5b07
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.large_16_9_1920x1080
+label: 'Large 16:9 (1920x1080)'
+targetEntityType: media
+cache: true

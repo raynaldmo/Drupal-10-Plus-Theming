@@ -1,0 +1,49 @@
+uuid: 57d7036d-dbcf-47f5-b454-5d9cc5738a8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_progress_bar_item
+    - paragraphs.paragraphs_type.progress_bar_and_media
+    - paragraphs.paragraphs_type.progress_bar_item
+  module:
+    - entity_reference_revisions
+id: paragraph.progress_bar_and_media.field_progress_bar_item
+field_name: field_progress_bar_item
+entity_type: paragraph
+bundle: progress_bar_and_media
+label: 'Progress bar'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      progress_bar_item: progress_bar_item
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 8
+        enabled: false
+      accordion_and_media:
+        weight: 9
+        enabled: false
+      accordion_item:
+        weight: 10
+        enabled: false
+      clients_logo:
+        weight: 11
+        enabled: false
+      progress_bar_and_media:
+        weight: 12
+        enabled: false
+      progress_bar_item:
+        weight: 13
+        enabled: true
+      two_column_text:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

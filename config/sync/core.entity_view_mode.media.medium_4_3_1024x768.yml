@@ -1,0 +1,10 @@
+uuid: a3b81fcc-984d-4d95-b192-cc44810990af
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.medium_4_3_1024x768
+label: 'Medium 4:3 (1024x768)'
+targetEntityType: media
+cache: true

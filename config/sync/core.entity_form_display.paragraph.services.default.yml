@@ -1,0 +1,42 @@
+uuid: 89546101-b0e3-4e0a-81f3-b179c341e6b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services.field_header
+    - field.field.paragraph.services.field_text
+    - field.field.paragraph.services.field_view_content
+    - paragraphs.paragraphs_type.services
+  module:
+    - text
+    - viewsreference
+id: paragraph.services.default
+targetEntityType: paragraph
+bundle: services
+mode: default
+content:
+  field_header:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_view_content:
+    type: viewsreference_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,22 @@
+uuid: c9935bda-ef76-4f37-ae25-92f5437a1f5d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: service
+label: Service
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  60e9b648-635f-40fe-9962-ef0eefcf8b64:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 60e9b648-635f-40fe-9962-ef0eefcf8b64
+    context_mapping:
+      node: node
+    bundles:
+      service: service
+selection_logic: and
+weight: -5
+relationships: {  }

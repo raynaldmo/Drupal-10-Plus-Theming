@@ -1,0 +1,28 @@
+<?php declare(strict_types = 1);
+
+/**
+ * @file
+ * Primary module hooks for Arsha utils module.
+ */
+
+/**
+ * Implements hook_form_alter().
+ */
+function arsha_utils_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id): void {
+  if (preg_match('/^node.+form$/', $form['#id'])) {
+    $form['#attached']['library'][] = 'arsha/utils';
+  }
+}
+
+/**
+ * Implements hook_help().
+ */
+function arsha_utils_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the block module.
+    case 'help.page.arsha_utils':
+      return '<p>' . t('Arsha site utility functions.') . '</p>';
+
+    default:
+  }
+}

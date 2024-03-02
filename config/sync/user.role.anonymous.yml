@@ -29,4 +29,8 @@ permissions:
   - 'view paragraph content accordion_and_media'
   - 'view paragraph content accordion_item'
   - 'view paragraph content clients_logo'
+  - 'view paragraph content progress_bar_and_media'
+  - 'view paragraph content progress_bar_item'
+  - 'view paragraph content services'
+  - 'view paragraph content text_and_button'
   - 'view paragraph content two_column_text'

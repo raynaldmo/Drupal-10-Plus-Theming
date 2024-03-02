@@ -1,0 +1,15 @@
+uuid: 6dfc094d-4991-4876-8457-263c4a33d7c2
+langcode: en
+status: true
+dependencies: {  }
+name: large_16_9_1920x1080
+label: 'Large 16:9 (1920x1080)'
+effects:
+  ea72498c-a93d-483e-9b5e-826f34813f60:
+    uuid: ea72498c-a93d-483e-9b5e-826f34813f60
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1920
+      height: 1080
+      anchor: center-center

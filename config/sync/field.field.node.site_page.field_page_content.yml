@@ -8,6 +8,9 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.accordion_and_media
     - paragraphs.paragraphs_type.clients_logo
+    - paragraphs.paragraphs_type.progress_bar_and_media
+    - paragraphs.paragraphs_type.services
+    - paragraphs.paragraphs_type.text_and_button
     - paragraphs.paragraphs_type.two_column_text
   module:
     - entity_reference_revisions
@@ -29,6 +32,9 @@ settings:
       two_column_text: two_column_text
       accordion: accordion
       accordion_and_media: accordion_and_media
+      progress_bar_and_media: progress_bar_and_media
+      services: services
+      text_and_button: text_and_button
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -43,9 +49,18 @@ settings:
       clients_logo:
         weight: 2
         enabled: true
-      faqs:
-        weight: 8
+      progress_bar_and_media:
+        weight: 12
+        enabled: true
+      progress_bar_item:
+        weight: 13
         enabled: false
+      services:
+        weight: 15
+        enabled: true
+      text_and_button:
+        weight: 17
+        enabled: true
       two_column_text:
         weight: 4
         enabled: true

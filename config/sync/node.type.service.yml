@@ -1,0 +1,17 @@
+uuid: 861c1ddd-aebc-4788-a712-2c259991821e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Service
+type: service
+description: 'Company Services'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,15 @@
+uuid: 480c79b2-2f40-483a-b663-b43fea6ec3fa
+langcode: en
+status: true
+dependencies: {  }
+name: medium_4_3_1024x768
+label: 'Medium 4:3 (1024x768)'
+effects:
+  50b1d527-8568-4404-aff0-42c9f87aa2c5:
+    uuid: 50b1d527-8568-4404-aff0-42c9f87aa2c5
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1024
+      height: 630
+      anchor: center-center

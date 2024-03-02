@@ -1,0 +1,23 @@
+uuid: c9997f75-0737-4dfc-a5e0-1c0a9cb70c51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_number
+    - paragraphs.paragraphs_type.progress_bar_item
+id: paragraph.progress_bar_item.field_number
+field_name: field_number
+entity_type: paragraph
+bundle: progress_bar_item
+label: Value
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: 100
+  prefix: ''
+  suffix: ''
+field_type: integer

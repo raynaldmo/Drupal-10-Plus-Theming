@@ -1,0 +1,24 @@
+uuid: b86df61f-1246-45ac-9d4b-1b294ea55bc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.progress_bar_and_media
+  module:
+    - text
+id: paragraph.progress_bar_and_media.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: progress_bar_and_media
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

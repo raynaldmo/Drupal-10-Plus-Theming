@@ -1,0 +1,55 @@
+uuid: 2cd5284f-947d-42a2-bae5-0b335b300050
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.services.field_header
+    - field.field.paragraph.services.field_text
+    - field.field.paragraph.services.field_view_content
+    - paragraphs.paragraphs_type.services
+  module:
+    - fences
+    - text
+    - viewsreference
+id: paragraph.services.default
+targetEntityType: paragraph
+bundle: services
+mode: default
+content:
+  field_header:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_view_content:
+    type: viewsreference_lazy_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        page: 0
+        feed: 0
+        embed: 0
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 2
+    region: content
+hidden: {  }
