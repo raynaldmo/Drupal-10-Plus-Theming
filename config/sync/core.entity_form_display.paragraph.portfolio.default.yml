@@ -1,0 +1,49 @@
+uuid: f097f796-7dc1-4b5b-bc01-cfdbb5ebdef9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.portfolio.field_category
+    - field.field.paragraph.portfolio.field_header
+    - field.field.paragraph.portfolio.field_text
+    - field.field.paragraph.portfolio.field_view_content
+    - paragraphs.paragraphs_type.portfolio
+  module:
+    - text
+    - viewsreference
+id: paragraph.portfolio.default
+targetEntityType: paragraph
+bundle: portfolio
+mode: default
+content:
+  field_category:
+    type: options_buttons
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_header:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_view_content:
+    type: viewsreference_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,0 +1,24 @@
+uuid: 6c8ed90f-e297-4ede-afd4-9099d50051ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text
+    - filter.format.basic_html
+    - node.type.project
+  module:
+    - text
+id: node.project.field_text
+field_name: field_text
+entity_type: node
+bundle: project
+label: 'Project description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

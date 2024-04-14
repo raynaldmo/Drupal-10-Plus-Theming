@@ -1,0 +1,19 @@
+uuid: 5beedfd6-bd13-419e-a677-7694b52cd5c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plain_text
+    - node.type.project
+id: node.project.field_plain_text
+field_name: field_plain_text
+entity_type: node
+bundle: project
+label: 'Project client'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

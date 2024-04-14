@@ -1,0 +1,31 @@
+uuid: 674a6686-0fd6-4dd2-9b42-8e40cc96134b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_view_content
+    - paragraphs.paragraphs_type.portfolio
+  module:
+    - viewsreference
+id: paragraph.portfolio.field_view_content
+field_name: field_view_content
+entity_type: paragraph
+bundle: portfolio
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views:
+    projects: projects
+  enabled_settings:
+    title: title
+field_type: viewsreference

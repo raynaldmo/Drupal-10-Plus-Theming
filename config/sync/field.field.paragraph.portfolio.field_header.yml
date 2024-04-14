@@ -1,0 +1,24 @@
+uuid: 9342ed82-c715-4f9a-9751-6e9e1a832ad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_header
+    - filter.format.header_html
+    - paragraphs.paragraphs_type.portfolio
+  module:
+    - text
+id: paragraph.portfolio.field_header
+field_name: field_header
+entity_type: paragraph
+bundle: portfolio
+label: Header
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - header_html
+field_type: text_long

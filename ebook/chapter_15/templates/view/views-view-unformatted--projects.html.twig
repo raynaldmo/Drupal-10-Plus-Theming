@@ -1,0 +1,58 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+  {% for row in rows %}
+    {# {{dump(row)}} #}
+    {% set node = row.content['#row']._entity %}
+    {% set image_uri = 
+      node.field_media_image|file_uri
+    %}
+    {% if image_uri is not null %}
+      {% set image_url = 
+        image_uri|image_style('project_full_size')
+      %}
+    {% endif %}
+    {% set image_alt = 
+      node.field_media_image.entity.field_media_image.alt
+    %}
+    {% set node_title = 
+        node.title.value
+    %}
+    {% set node_path = 
+      node|entity_url
+    %}
+    {% set category = 
+      row.content['#row']._relationship_entities.field_category.name.value
+    %}
+    <div class="col-lg-4 col-md-6 portfolio-item filter-{{category|lower}}">
+      <div class="portfolio-img"><img src="{{image_url}}" class="img-fluid" alt="{{image_alt}}"></div>
+      <div class="portfolio-info">
+        <h4>{{node_title}}</h4>
+        <p>{{category}}</p>
+        <a href="{{image_url}}" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="{{node_title}}">
+          <i class="bx bx-plus"></i>
+        </a>
+        <a href="{{node_path}}" class="details-link" title="More Details">
+          <i class="bx bx-link"></i>
+        </a>
+      </div>
+    </div>
+  {% endfor %}
+</div>

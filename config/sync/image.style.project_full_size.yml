@@ -1,0 +1,7 @@
+uuid: 18af084f-3663-4ae8-ab4c-8f87f23439df
+langcode: en
+status: true
+dependencies: {  }
+name: project_full_size
+label: 'Project (full size)'
+effects: {  }

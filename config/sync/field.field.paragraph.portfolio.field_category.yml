@@ -1,0 +1,29 @@
+uuid: 51b99d2e-8527-46e6-8697-6d03dfe50a48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_category
+    - paragraphs.paragraphs_type.portfolio
+    - taxonomy.vocabulary.project
+id: paragraph.portfolio.field_category
+field_name: field_category
+entity_type: paragraph
+bundle: portfolio
+label: 'Project category'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      project: project
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

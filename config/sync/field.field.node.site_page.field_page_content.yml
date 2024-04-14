@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.accordion_and_media
     - paragraphs.paragraphs_type.clients_logo
+    - paragraphs.paragraphs_type.portfolio
     - paragraphs.paragraphs_type.progress_bar_and_media
     - paragraphs.paragraphs_type.services
     - paragraphs.paragraphs_type.text_and_button
@@ -33,6 +34,7 @@ settings:
       accordion: accordion
       accordion_and_media: accordion_and_media
       progress_bar_and_media: progress_bar_and_media
+      portfolio: portfolio
       services: services
       text_and_button: text_and_button
     negate: 0
@@ -48,6 +50,9 @@ settings:
         enabled: false
       clients_logo:
         weight: 2
+        enabled: true
+      portfolio:
+        weight: 15
         enabled: true
       progress_bar_and_media:
         weight: 12

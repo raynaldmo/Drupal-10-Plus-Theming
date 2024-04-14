@@ -1,0 +1,24 @@
+uuid: b0435af5-ba04-4bfb-9d6c-94fbac2ce8a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.portfolio
+  module:
+    - text
+id: paragraph.portfolio.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: portfolio
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

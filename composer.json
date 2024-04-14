@@ -27,7 +27,7 @@
         "drupal/current_page_crumb": "^1.5",
         "drupal/fences": "^3.0",
         "drupal/paragraphs": "^1.17",
-        "drupal/pathauto": "^1.11",
+        "drupal/pathauto": "^1.12",
         "drupal/smart_trim": "^2.1",
         "drupal/social_media_links": "^2.9",
         "drupal/twig_tweak": "^3.2",

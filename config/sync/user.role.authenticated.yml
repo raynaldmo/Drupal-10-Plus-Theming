@@ -35,6 +35,7 @@ permissions:
   - 'view paragraph content accordion_and_media'
   - 'view paragraph content accordion_item'
   - 'view paragraph content clients_logo'
+  - 'view paragraph content portfolio'
   - 'view paragraph content progress_bar_and_media'
   - 'view paragraph content progress_bar_item'
   - 'view paragraph content services'

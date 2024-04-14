@@ -54,3 +54,6 @@
 
 # Private and local development files
 /Development
+
+# Development scripts
+clean_permissions.php

@@ -1,0 +1,10 @@
+uuid: 06090a6a-6b0a-447e-93cd-70f6ffc2d60f
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.project_full_size
+label: 'Project (full size)'
+targetEntityType: media
+cache: true
