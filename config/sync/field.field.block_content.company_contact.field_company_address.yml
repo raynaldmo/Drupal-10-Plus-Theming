@@ -1,0 +1,24 @@
+uuid: 34bbe954-5148-445e-8d8e-db950ae99f3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.company_contact
+    - field.storage.block_content.field_company_address
+    - filter.format.basic_html
+  module:
+    - text
+id: block_content.company_contact.field_company_address
+field_name: field_company_address
+entity_type: block_content
+bundle: company_contact
+label: 'Company address'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

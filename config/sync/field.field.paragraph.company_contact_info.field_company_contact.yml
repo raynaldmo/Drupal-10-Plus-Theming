@@ -1,0 +1,25 @@
+uuid: 971d32ba-8ef3-463a-8208-5df46d29e43f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_company_contact
+    - paragraphs.paragraphs_type.company_contact_info
+  module:
+    - block_field
+id: paragraph.company_contact_info.field_company_contact
+field_name: field_company_contact
+entity_type: paragraph
+bundle: company_contact_info
+label: 'Company contact'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  selection: blocks
+  selection_settings:
+    plugin_ids:
+      'block_content:c35df1fb-75b7-4eaa-8eae-5554903b5b9d': 'block_content:c35df1fb-75b7-4eaa-8eae-5554903b5b9d'
+field_type: block_field

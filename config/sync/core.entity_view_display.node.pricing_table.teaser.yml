@@ -1,0 +1,30 @@
+uuid: 73f38657-404c-4f0a-b2f3-956c498c3256
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pricing_table.field_link
+    - field.field.node.pricing_table.field_plain_text
+    - field.field.node.pricing_table.field_plan_price
+    - field.field.node.pricing_table.field_text
+    - field.field.node.pricing_table.field_weight
+    - node.type.pricing_table
+  module:
+    - user
+id: node.pricing_table.teaser
+targetEntityType: node
+bundle: pricing_table
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_link: true
+  field_plain_text: true
+  field_plan_price: true
+  field_text: true
+  field_weight: true

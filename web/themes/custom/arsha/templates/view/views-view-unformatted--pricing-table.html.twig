@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% set classes = 'col-lg-4' %}
+
+<div class="row">
+  {% if title %}
+    <h3>{{ title }}</h3>
+  {% endif %}
+  {% for row in rows %}
+    {% if loop.index == 1 %}
+      {% set row_classes = classes %}
+    {% else %}
+      {% set row_classes = classes ~ ' mt-4 mt-lg-0' %}
+    {% endif %}
+    {% set aos_delay = loop.index * 100 %}
+    <div{{ row.attributes.addClass(row_classes) }} data-aos="zoom-in" 
+              data-aos-delay="{{ aos_delay }}">
+      {% if loop.index == 2  %}        
+        <div class="box featured">
+      {% else %}
+        <div class="box">
+      {% endif %}
+          {{- row.content -}}
+        </div>
+    </div>
+  {% endfor %}
+</div>

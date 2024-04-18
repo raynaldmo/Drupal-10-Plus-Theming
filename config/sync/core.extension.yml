@@ -7,6 +7,7 @@ module:
   automated_cron: 0
   block: 0
   block_content: 0
+  block_field: 0
   breakpoint: 0
   ckeditor5: 0
   coffee: 0
@@ -45,6 +46,7 @@ module:
   path_alias: 0
   search: 0
   shortcut: 0
+  simple_gmap: 0
   smart_trim: 0
   social_media_links: 0
   social_media_links_field: 0
@@ -63,6 +65,7 @@ module:
   webform_ui: 0
   weight: 0
   pathauto: 1
+  formdazzle: 10
   views: 10
   paragraphs: 11
   standard: 1000

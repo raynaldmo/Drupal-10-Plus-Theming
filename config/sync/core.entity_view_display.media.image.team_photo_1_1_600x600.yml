@@ -1,0 +1,44 @@
+uuid: 36a5c08c-7bba-48a4-9c54-10e3ed3f9865
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.team_photo_1_1_600x600
+    - field.field.media.image.field_media_image
+    - image.style.team_photo_1_1_600x600
+    - media.type.image
+  module:
+    - fences
+    - image
+_core:
+  default_config_hash: 73xaTNkI5J6sfFcBmNYeuk070X3mQS_iwwWaPYyfG2M
+id: media.image.team_photo_1_1_600x600
+targetEntityType: media
+bundle: image
+mode: team_photo_1_1_600x600
+content:
+  field_media_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: team_photo_1_1_600x600
+      image_loading:
+        attribute: lazy
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 1
+    region: content
+hidden:
+  created: true
+  name: true
+  thumbnail: true
+  uid: true

@@ -1,0 +1,22 @@
+uuid: 2bacdeb5-a1c8-4200-be56-257c2fcfc6f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.team
+  module:
+    - weight
+id: node.team.field_weight
+field_name: field_weight
+entity_type: node
+bundle: team
+label: Weight
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  range: '20'
+field_type: weight

@@ -1,0 +1,20 @@
+uuid: e3bc7368-fbd3-49d2-9336-86a7e07682b5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_plan_price
+field_name: field_plan_price
+entity_type: node
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

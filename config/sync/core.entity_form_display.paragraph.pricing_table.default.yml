@@ -1,0 +1,42 @@
+uuid: 0eb5545f-dddc-4cfc-ab5b-9f9cf35726f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pricing_table.field_header
+    - field.field.paragraph.pricing_table.field_text
+    - field.field.paragraph.pricing_table.field_view_content
+    - paragraphs.paragraphs_type.pricing_table
+  module:
+    - text
+    - viewsreference
+id: paragraph.pricing_table.default
+targetEntityType: paragraph
+bundle: pricing_table
+mode: default
+content:
+  field_header:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_view_content:
+    type: viewsreference_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

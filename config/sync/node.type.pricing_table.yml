@@ -1,0 +1,17 @@
+uuid: 2fe1e164-1789-4a1c-976b-379de975ac3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Pricing table'
+type: pricing_table
+description: 'Pricing Table'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

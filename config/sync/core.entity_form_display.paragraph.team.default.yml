@@ -1,0 +1,42 @@
+uuid: 16fc7d4f-d066-4b70-8edd-3b07d1025eed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team.field_header
+    - field.field.paragraph.team.field_text
+    - field.field.paragraph.team.field_view_content
+    - paragraphs.paragraphs_type.team
+  module:
+    - text
+    - viewsreference
+id: paragraph.team.default
+targetEntityType: paragraph
+bundle: team
+mode: default
+content:
+  field_header:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_view_content:
+    type: viewsreference_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

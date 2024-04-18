@@ -1,0 +1,17 @@
+uuid: 6dce6ed8-6108-409f-bbe3-0ad7d3214b1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Team
+type: team
+description: 'Company Employees'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

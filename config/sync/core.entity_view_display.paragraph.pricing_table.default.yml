@@ -1,0 +1,55 @@
+uuid: 8990ce31-a314-4ebb-aaa3-029a170a023e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pricing_table.field_header
+    - field.field.paragraph.pricing_table.field_text
+    - field.field.paragraph.pricing_table.field_view_content
+    - paragraphs.paragraphs_type.pricing_table
+  module:
+    - fences
+    - text
+    - viewsreference
+id: paragraph.pricing_table.default
+targetEntityType: paragraph
+bundle: pricing_table
+mode: default
+content:
+  field_header:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_view_content:
+    type: viewsreference_lazy_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        page: 0
+        feed: 0
+        embed: 0
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 4
+    region: content
+hidden: {  }

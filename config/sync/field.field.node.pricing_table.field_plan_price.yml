@@ -1,0 +1,23 @@
+uuid: 01fab0d7-69cc-44b2-91f3-54445453c22f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_plan_price
+    - node.type.pricing_table
+id: node.pricing_table.field_plan_price
+field_name: field_plan_price
+entity_type: node
+bundle: pricing_table
+label: 'Plan price'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

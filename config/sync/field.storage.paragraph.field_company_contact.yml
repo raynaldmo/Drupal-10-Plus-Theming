@@ -1,0 +1,19 @@
+uuid: 3c2e6245-2ada-434a-9d60-5f5c15dfd915
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_field
+    - paragraphs
+id: paragraph.field_company_contact
+field_name: field_company_contact
+entity_type: paragraph
+type: block_field
+settings: {  }
+module: block_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

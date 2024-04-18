@@ -1,0 +1,55 @@
+uuid: 115fd4b7-e0a4-449b-b785-08da541e0cd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.team.field_header
+    - field.field.paragraph.team.field_text
+    - field.field.paragraph.team.field_view_content
+    - paragraphs.paragraphs_type.team
+  module:
+    - fences
+    - text
+    - viewsreference
+id: paragraph.team.default
+targetEntityType: paragraph
+bundle: team
+mode: default
+content:
+  field_header:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_view_content:
+    type: viewsreference_lazy_formatter
+    label: hidden
+    settings:
+      plugin_types:
+        block: block
+        default: 0
+        page: 0
+        feed: 0
+        embed: 0
+    third_party_settings:
+      fences:
+        fences_field_tag: none
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: none
+        fences_field_item_classes: ''
+        fences_label_tag: none
+        fences_label_classes: ''
+    weight: 4
+    region: content
+hidden: {  }

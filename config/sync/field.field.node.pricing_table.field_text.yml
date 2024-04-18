@@ -1,0 +1,24 @@
+uuid: 9d4f011f-affc-487e-964f-c9357748b5ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text
+    - filter.format.basic_html
+    - node.type.pricing_table
+  module:
+    - text
+id: node.pricing_table.field_text
+field_name: field_text
+entity_type: node
+bundle: pricing_table
+label: 'Plan features'
+description: 'Plan features'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

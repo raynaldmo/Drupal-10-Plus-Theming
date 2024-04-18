@@ -1,0 +1,70 @@
+uuid: 91054ac4-59e0-4db6-bd49-2cad077952f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.company_contact
+    - field.field.block_content.company_contact.field_company_address
+    - field.field.block_content.company_contact.field_company_email
+    - field.field.block_content.company_contact.field_company_location
+    - field.field.block_content.company_contact.field_company_phone_number
+  module:
+    - fences
+    - simple_gmap
+    - text
+id: block_content.company_contact.default
+targetEntityType: block_content
+bundle: company_contact
+mode: default
+content:
+  field_company_address:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_company_email:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_company_location:
+    type: simple_gmap
+    label: hidden
+    settings:
+      include_map: true
+      include_static_map: false
+      include_link: false
+      include_text: false
+      iframe_height: 290px
+      iframe_width: 100%
+      iframe_title: ''
+      static_scale: 1
+      zoom_level: 14
+      link_text: 'View larger map'
+      map_type: m
+      langcode: en
+      apikey: ''
+    third_party_settings:
+      fences:
+        fences_field_tag: div
+        fences_field_classes: ''
+        fences_field_items_wrapper_tag: none
+        fences_field_items_wrapper_classes: ''
+        fences_field_item_tag: div
+        fences_field_item_classes: ''
+        fences_label_tag: div
+        fences_label_classes: ''
+    weight: 3
+    region: content
+  field_company_phone_number:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: 1f01a91c-90f3-46e9-9dbc-2e4e113f05de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_text
+    - filter.format.basic_html
+    - node.type.team
+  module:
+    - text
+id: node.team.field_text
+field_name: field_text
+entity_type: node
+bundle: team
+label: 'Job description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

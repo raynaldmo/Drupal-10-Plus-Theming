@@ -1,0 +1,10 @@
+uuid: 092a995a-a365-4bbf-b29b-4ea140f1d88e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.team_photo_1_1_600x600
+label: 'Team Photo 1:1 (600x600)'
+targetEntityType: media
+cache: true

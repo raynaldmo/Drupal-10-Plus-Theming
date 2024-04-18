@@ -1,0 +1,23 @@
+uuid: 544f6ad4-8aca-42ce-bd96-b3df85134a5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.pricing_table
+  module:
+    - link
+id: node.pricing_table.field_link
+field_name: field_link
+entity_type: node
+bundle: pricing_table
+label: 'Get started link'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 2
+  link_type: 1
+field_type: link

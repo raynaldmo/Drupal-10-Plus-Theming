@@ -1,0 +1,22 @@
+uuid: 7575552a-552e-4be3-9a15-aad6df9f3b31
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: pricing_table
+label: 'Pricing table'
+type: 'canonical_entities:node'
+pattern: '[node:content-type]/[node:title]'
+selection_criteria:
+  ff97284a-7e3a-49a3-9a15-9a8d353d92ec:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: ff97284a-7e3a-49a3-9a15-9a8d353d92ec
+    context_mapping:
+      node: node
+    bundles:
+      pricing_table: pricing_table
+selection_logic: and
+weight: -7
+relationships: {  }

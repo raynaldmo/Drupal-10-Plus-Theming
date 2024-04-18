@@ -1,0 +1,24 @@
+uuid: 0919d9a9-0196-495c-956c-5b0e9265c6e6
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.company_contact
+    - field.storage.block_content.field_company_email
+    - filter.format.basic_html
+  module:
+    - text
+id: block_content.company_contact.field_company_email
+field_name: field_company_email
+entity_type: block_content
+bundle: company_contact
+label: 'Company email'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

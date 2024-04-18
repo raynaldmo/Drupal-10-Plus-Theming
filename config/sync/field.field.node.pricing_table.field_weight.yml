@@ -1,0 +1,22 @@
+uuid: 5e596939-5975-4543-8d15-497bce279fd9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_weight
+    - node.type.pricing_table
+  module:
+    - weight
+id: node.pricing_table.field_weight
+field_name: field_weight
+entity_type: node
+bundle: pricing_table
+label: 'Plan weight'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  range: '20'
+field_type: weight

@@ -1,0 +1,15 @@
+uuid: e84a87b0-eb2e-46ab-8186-e0c03547ca81
+langcode: en
+status: true
+dependencies: {  }
+name: team_photo_1_1_600x600
+label: 'Team Photo 1:1 (600x600)'
+effects:
+  5e3bf3ea-2599-40d9-8f5d-eb491e7058ee:
+    uuid: 5e3bf3ea-2599-40d9-8f5d-eb491e7058ee
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 600
+      height: 600
+      anchor: center-center

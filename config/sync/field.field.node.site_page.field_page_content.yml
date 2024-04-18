@@ -8,9 +8,12 @@ dependencies:
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.accordion_and_media
     - paragraphs.paragraphs_type.clients_logo
+    - paragraphs.paragraphs_type.company_contact_info
     - paragraphs.paragraphs_type.portfolio
+    - paragraphs.paragraphs_type.pricing_table
     - paragraphs.paragraphs_type.progress_bar_and_media
     - paragraphs.paragraphs_type.services
+    - paragraphs.paragraphs_type.team
     - paragraphs.paragraphs_type.text_and_button
     - paragraphs.paragraphs_type.two_column_text
   module:
@@ -37,6 +40,9 @@ settings:
       portfolio: portfolio
       services: services
       text_and_button: text_and_button
+      company_contact_info: company_contact_info
+      pricing_table: pricing_table
+      team: team
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -51,8 +57,14 @@ settings:
       clients_logo:
         weight: 2
         enabled: true
+      company_contact_info:
+        weight: 18
+        enabled: true
       portfolio:
         weight: 15
+        enabled: true
+      pricing_table:
+        weight: 18
         enabled: true
       progress_bar_and_media:
         weight: 12
@@ -62,6 +74,9 @@ settings:
         enabled: false
       services:
         weight: 15
+        enabled: true
+      team:
+        weight: 20
         enabled: true
       text_and_button:
         weight: 17

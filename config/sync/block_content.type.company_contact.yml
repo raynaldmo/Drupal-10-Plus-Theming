@@ -1,0 +1,8 @@
+uuid: 4a44bf5c-2cc4-4b26-9cad-5300cc4f0f08
+langcode: en
+status: true
+dependencies: {  }
+id: company_contact
+label: 'Company contact'
+revision: 0
+description: 'Company contact information'

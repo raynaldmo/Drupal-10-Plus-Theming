@@ -1,0 +1,24 @@
+uuid: b3110d0d-9b9b-4e85-9b5c-ae1fdb1d3dda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text
+    - filter.format.basic_html
+    - paragraphs.paragraphs_type.pricing_table
+  module:
+    - text
+id: paragraph.pricing_table.field_text
+field_name: field_text
+entity_type: paragraph
+bundle: pricing_table
+label: Text
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - basic_html
+field_type: text_long

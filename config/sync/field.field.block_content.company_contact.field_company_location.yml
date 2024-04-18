@@ -1,0 +1,19 @@
+uuid: 0260bf14-80cd-4b9c-8f2d-ac55c7902ebe
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.company_contact
+    - field.storage.block_content.field_company_location
+id: block_content.company_contact.field_company_location
+field_name: field_company_location
+entity_type: block_content
+bundle: company_contact
+label: 'Company location'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

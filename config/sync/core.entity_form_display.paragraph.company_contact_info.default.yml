@@ -1,0 +1,55 @@
+uuid: 8e3449e5-331d-4be2-a7ca-9bd6d50a456a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.company_contact_info.field_company_contact
+    - field.field.paragraph.company_contact_info.field_contact_form
+    - field.field.paragraph.company_contact_info.field_header
+    - field.field.paragraph.company_contact_info.field_text
+    - paragraphs.paragraphs_type.company_contact_info
+  module:
+    - block_field
+    - text
+    - webform
+id: paragraph.company_contact_info.default
+targetEntityType: paragraph
+bundle: company_contact_info
+mode: default
+content:
+  field_company_contact:
+    type: block_field_default
+    weight: 2
+    region: content
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+  field_contact_form:
+    type: webform_entity_reference_select
+    weight: 3
+    region: content
+    settings:
+      default_data: true
+      webforms: {  }
+    third_party_settings: {  }
+  field_header:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 1
+    region: content
+    settings:
+      rows: 1
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
